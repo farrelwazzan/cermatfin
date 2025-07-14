@@ -32,8 +32,23 @@
             <li><a href="">testimony</a></li>
         </ul>
     </nav>
+    <!-- konten -->
+    <div class="konten-wrapper">
+        <div class="konten-header">
+            <h1 class="judul-teks">Kelola Keuangan Pribadi dengan Mudah, <span>Cerdas</span>, dan Aman</h1>
+            <p class="subjudul-teks">Sistem manajemen keuangan pribadi yang membantumu merencanakan <span>anggaran</span>, mencatat <span>pengeluaran</span>, memantau <span>pemasukan</span>, dan mencapai tujuan <span>finansial</span> secara terorganisir.</p>
+            <div class="container">
+                <div>
+                    <a href="" class="kartu-tombol">mulai</a>
+                </div>
+            </div>
+        </div>
+        <div class="foto-hiasan">
+            <img src="{{ asset('image/lukisbiru.jpg') }}" alt="">
+        </div>
+    </div>
+    
 
     <script src="{{ asset('js/main.js') }}"></script>
-
 </body>
 </html>
