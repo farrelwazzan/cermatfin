@@ -11,26 +11,29 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="" style="margin-left: 80;">
-        <div class="container text-center bg-primary">
-            <div class="row mt-4 align-items-center">
-                <div class="col-2 caveat-text">
-                    <h1>CermatF1n</h1>
-                </div>
-                <div class="col-5">
-                    
-                </div>
-                <div class="col-5">
-                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"> 
-                        <li><a href="#" class="nav-link px-4 link-dark montserrat-text" style="font-size: 0.85rem;">BERANDA</a></li> 
-                        <li><a href="#" class="nav-link px-4 link-dark montserrat-text" style="font-size: 0.85rem;">FITUR</a></li> 
-                        <li><a href="#" class="nav-link px-4 link-dark montserrat-text" style="font-size: 0.85rem;">DAFTAR</a></li> 
-                        <li><a href="#" class="nav-link px-4 link-dark montserrat-text" style="font-size: 0.85rem;">TESTIMONE</a></li> 
-                    </ul>
-                </div>
+    <!-- navbar -->
+    <nav>
+        <div class="nav-header">
+            <div class="nav-logo">
+                <a href="">CermatFin</a>
+            </div>
+            <div class="nav-menu-btn" id="nav-btn-menu">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>  
+                </span>
             </div>
         </div>
-    </div>
-    
+        <ul class="nav-links" id="nav_links">
+            <li><a href="">home</a></li>
+            <li><a href="">features</a></li>
+            <li><a href="">sign-up</a></li>
+            <li><a href="">testimony</a></li>
+        </ul>
+    </nav>
+
+    <script src="{{ asset('js/main.js') }}"></script>
+
 </body>
 </html>
