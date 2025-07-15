@@ -162,6 +162,7 @@ nav {
   align-items: center;
   justify-content: center;
   padding-inline: 27px;
+  margin-bottom: 40px;
 }
 .foto-hiasan {
   display: none;
@@ -170,9 +171,81 @@ nav {
   max-width: 100%;
   height: auto;
 }
+.container-baris2{
+  display: flex;
+  background-color: var(--primary-color);
+  position: relative;
+  height: 600px;
+}
+.foto-landingpage2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.75;
+  z-index: 0;
+  mix-blend-mode: multiply;
+}
+.container-baris2 h2{
+  position: absolute;
+  z-index: 1;
+  color: var(--primary-color-dark);
+  font-size: 2.3rem;
+  font-weight: 720;
+  max-width: 800px;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  bottom: 50px;
+  letter-spacing: -2.3px;
+  text-transform: capitalize;
+}
+
+.container-footer{
+  background-color: #13505b;
+  height: 150px;
+}
+.konten-footer{
+  text-align: center;
+  margin: 10px 20px;
+}
+.teks1-footer{
+  font-family: var(--header-font);
+  font-size: 12px;
+  font-weight: 200;
+  color: var(--primary-color);
+}
+.konten-footer a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.footer-baris1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.footer-line {
+  flex: 1;
+  left: 0;
+  right: 0;
+}
+.footer-line hr {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  width: 100%;
+}
+.footer-icon {
+  margin-left: 10px;
+}
+.footer-icon svg{
+  margin: 4px;
+}
 
 
-@media (width > 768px) {
+@media (width > 630px) {
   nav {
     position: static;
     padding-block: 2rem 0;
@@ -210,6 +283,7 @@ nav {
     color: var(--primary-color-dark);
   }
   .konten-wrapper {
+    margin-top: 40px;
     flex-direction: row; 
     gap: 2rem;
     justify-content: space-between;
@@ -222,15 +296,33 @@ nav {
     padding-right: 27px;
     width: 50%;
   }
+  .subjudul-teks {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .foto-hiasan::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 425px;
+    height: 425px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: blur(7px);
+  }
   .foto-hiasan {
     display: block;
+    position: relative;
     width: 50%;
     text-align: center;
   }
   .foto-hiasan img {
     width: 100%;
-    max-width: 250px;
-    height: auto;
+    width: 300px;
+    max-height: 400px ;
     object-fit: cover;
     border-radius: 20px;
   }
